@@ -2,7 +2,7 @@
 - __Email:__ louis.hildebrand@mail.mcgill.ca
 - __Cell:__ (514) 293-0498
 - __GitHub:__ [louis-hildebrand](https://github.com/louis-hildebrand)
-- __LinkedIn:__ https://www.linkedin.com/in/louis-hildebrand-213390205/
+- __LinkedIn:__ https://www.linkedin.com/in/louis-hildebrand/
 
 # Education
 - __McGill University:__ B Software Engineering (_September 2020 – December 2023, currently U2_)

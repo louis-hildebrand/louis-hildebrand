@@ -1,13 +1,13 @@
 # Contact information
-- __Email:__ louis.hildebrand@mail.mcgill.ca
+- __Email:__ louis.hildebrand@mail.mcgill.ca, louis.hildebrand@mcgill.ca
 - __Cell:__ (514) 293-0498
 - __GitHub:__ [louis-hildebrand](https://github.com/louis-hildebrand)
 - __LinkedIn:__ https://www.linkedin.com/in/louis-hildebrand/
 
 # Education
-- __McGill University:__ B Software Engineering (_September 2020 – December 2023, currently U2_)
-    - 4.0/4.0 CGPA as of the end of Fall 2021
-    - Dean's Honour List Fall 2020/Winter 2021
+- __McGill University:__ B Software Engineering (_September 2020 – December 2023, currently U3_)
+    - 4.0/4.0 CGPA
+    - Dean's Honour List: 2020/2021 and 2021/2022
 - __John Abbott College:__ Honours Science (_August 2018 – May 2020_)
     - Dean's List (Fall 2018, Winter 2019, and Fall 2019)
     - Valedictorian
@@ -20,21 +20,21 @@
 - Java
 - C#
 - SQL (SQL Server)
-- OCaml
 - Python
 
 #### Some experience with:
-- Vue.js (JavaScript, HTML, and CSS)
 - C
+- OCaml
+- Vue.js (JavaScript, HTML, and CSS)
 - R
 - VHDL
 - ARMv7-A assembly
 
 ## Other development tools
 - Git
-- GitHub (including GitHub Actions)
+- GitHub (including Actions, Projects, Wiki, etc.)
 - Jira
-- PowerShell/cmd
+- PowerShell/Windows Command Prompt
 - Bash
 - Postman
 - Eclipse
@@ -47,12 +47,18 @@
 - Afrikaans
 
 # Work experience
-- __123Loadboard:__ Backend intern (_May 3, 2021 - August 20, 2021_)
+- __123Loadboard:__ Backend intern (_Summer 2021, 2022_)
     - Implemented microservices to centralize email sending logic (.NET Core 3.1)
     - Contributed to the database (SQL Server), REST API (.NET Framework 4.7.2, C#), and various other projects
+    - Implemented a new "reply-by-email" feature in the new microservices
     - Alternated between working mostly independently on microservice and collaborating closely with coworkers on large API
+- __McGill University:__ Teaching assistant for ECSE 321: Introduction to Software Engineering (_Fall 2022_: 2022/08/30 - 2022/12/23)
+    - Delivered tutorial sessions every other week
+    - Held weekly office hours
+    - Helped the professor create project instructions
 - __McGill University:__ Teaching assistant for MATH 263: ODEs for Engineers (_Fall 2021_)
-    - Oversaw weekly review and practice sessions with 70+ students
+    - Oversaw weekly tutorials
+    - Answered students' questions by email
     - Independently produced summaries and practice problems based on the lecture content
 - __McGill University:__ Teaching assistant (TEAM mentor) for ECSE 223: Model-based programming (_Fall 2021_)
     - Monitored online discussion boards

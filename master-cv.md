@@ -1,5 +1,5 @@
 # Contact information
-- __Email:__ louis.hildebrand@mail.mcgill.ca, louis.hildebrand@mcgill.ca
+- __Email:__ louis.hildebrand@mail.mcgill.ca
 - __Cell:__ (514) 293-0498
 - __GitHub:__ [louis-hildebrand](https://github.com/louis-hildebrand)
 - __LinkedIn:__ https://www.linkedin.com/in/louis-hildebrand/
@@ -19,7 +19,7 @@
 #### Familiar with:
 - Java
 - C#
-- SQL (SQL Server)
+- SQL (SQL Server, PostgreSQL)
 - Python
 
 #### Some experience with:
@@ -52,7 +52,7 @@
     - Contributed to the database (SQL Server), REST API (.NET Framework 4.7.2, C#), and various other projects
     - Implemented a new "reply-by-email" feature in the new microservices
     - Alternated between working mostly independently on microservice and collaborating closely with coworkers on large API
-- __McGill University:__ Teaching assistant for ECSE 321: Introduction to Software Engineering (_Fall 2022_: 2022/08/30 - 2022/12/23)
+- __McGill University:__ Teaching assistant for ECSE 321: Introduction to Software Engineering (_Fall 2022: 2022/08/30 - 2022/12/23_)
     - Delivered tutorial sessions every other week
     - Held weekly office hours
     - Helped the professor create project instructions
@@ -68,17 +68,26 @@
     - Supervised groups of children aged 5 – 12
 
 # Projects
-- [__math\_practice:__](https://github.com/louis-hildebrand/math_practice) OCaml command-line program (_December 2021 - Present_)
+- [__SH-Prediction__](https://github.com/louis-hildebrand/SH-Prediction) Python command-line project (_started April 2022_)
+    - Predicts players' roles in the social deduction game "Secret Hitler"
+    - Personal project
+- [__gitsum__](https://pypi.org/project/gitsum/) Python package (_started November 2022_)
+    - Presents a summary of the status of multiple Git repositories
+    - Personal project
+- [__sfs__](https://github.com/louis-hildebrand/sfs) C program (_November - December 2022_)
+    - Simple file system that can be mounted with FUSE
+    - Assignment 3 for ECSE 427: Operating Systems
+- [__math\_practice:__](https://github.com/louis-hildebrand/math_practice) OCaml command-line program (_started December 2021_)
     - Generates arithmetic practice problems with decimal numbers or fractions
     - Opportunity to gain experience with the OCaml ecosystem (opam package manager, dune build system, OUnit2 and cram tests, bisect_ppx test coverage, etc.)
     - Personal project
-- [__Sudoku solver:__](https://github.com/louis-hildebrand/Sudoku-Solver) C# console app (_July 2020_)
+- [__Sudoku solver:__](https://github.com/louis-hildebrand/Sudoku-Solver) C# console app (_started July 2020_)
     - Solves puzzles using a combination of standard strategies and backtracking
     - Personal project
-- [__Fifteen puzzle:__](https://github.com/louis-hildebrand/Fifteen-Puzzle-Game) Java Swing app (_September 2020_)
+- [__Fifteen puzzle:__](https://github.com/louis-hildebrand/Fifteen-Puzzle-Game) Java Swing app (_started September 2020_)
     - Game with custom Swing GUI, both timed and untimed game modes, etc.
     - Personal project
-- __Sudoku solver:__ Java app (_April 2021_)
+- __Sudoku solver:__ Java app (_started April 2021_)
     - Builds on the techniques used in my earlier solver, adds extra optimizations
         <!-- e.g. instead of passing over all cells to check for naked singles, assign values as soon as a cell gets down to 1 possible value -->
         <!-- e.g. only do one pass with analytical method before guessing -->

@@ -47,16 +47,18 @@
 - Afrikaans
 
 # Work experience
+- __McGill University:__ Course assistant for ECSE 321: Introduction to Software Engineering (_Fall 2022, Winter 2023_)
+    - Delivered tutorial sessions demonstrating how to create a fullstack web application with PostgreSQL, Java Spring, and Vue.js
+    - Held weekly office hours
+    - Helped the professor create project instructions
+- __McGill University:__ Teaching assistant (TEAM mentor) for FACC 300: Engineering Economy (_Winter 2023_)
+    - Helped answer students' questions after lectures
 - __123Loadboard:__ Backend intern (_Summer 2021, 2022_)
     - Implemented microservices to centralize email sending logic (.NET Core 3.1)
     - Contributed to the database (SQL Server), REST API (.NET Framework 4.7.2, C#), and various other projects
     - Implemented a new "reply-by-email" feature in the new microservices
     - Alternated between working mostly independently on microservice and collaborating closely with coworkers on large API
-- __McGill University:__ Teaching assistant for ECSE 321: Introduction to Software Engineering (_Fall 2022: 2022/08/30 - 2022/12/23_)
-    - Delivered tutorial sessions every other week
-    - Held weekly office hours
-    - Helped the professor create project instructions
-- __McGill University:__ Teaching assistant for MATH 263: ODEs for Engineers (_Fall 2021_)
+- __McGill University:__ Teaching assistant (TEAM mentor) for MATH 263: ODEs for Engineers (_Fall 2021_)
     - Oversaw weekly tutorials
     - Answered students' questions by email
     - Independently produced summaries and practice problems based on the lecture content

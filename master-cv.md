@@ -21,25 +21,37 @@
 - C#
 - SQL (SQL Server, PostgreSQL)
 - Python
+- C
 
 #### Some experience with:
-- C
-- OCaml
-- Vue.js (JavaScript, HTML, and CSS)
+- JavaScript
+- HTML
+- CSS
 - R
-- VHDL
 - ARMv7-A assembly
+- OCaml
+
+## Frameworks
+- Spring Boot
+- .NET
+- Django
+- Vue.js
+
+## IDEs
+- Eclipse
+- Visual Studio
+- Visual Studio Code
 
 ## Other development tools
 - Git
 - GitHub (including Actions, Projects, Wiki, etc.)
 - Jira
-- PowerShell/Windows Command Prompt
+- PowerShell
+- cmd.exe
 - Bash
 - Postman
-- Eclipse
-- Visual Studio
-- Visual Studio Code
+- Remote develoment over SSH
+- UML
 
 ## Languages
 - English
@@ -47,13 +59,16 @@
 - Afrikaans
 
 # Work experience
-- __McGill University:__ Course assistant for ECSE 321: Introduction to Software Engineering (_Fall 2022, Winter 2023_)
+- __MDA:__ Engineering Intern (_8 May - 18 August 2023_)
+    - Implemented new features and fixed bugs in web services using ASP.NET MVC, Razor Pages, Telerik, and Kendo UI
+    - Optimized SQL queries and procedures
+- __McGill University:__ Course assistant for ECSE 321: Introduction to Software Engineering (_Fall 2022, Winter 2023, Fall 2023_)
     - Delivered tutorial sessions demonstrating how to create a fullstack web application with PostgreSQL, Java Spring, and Vue.js
     - Held weekly office hours
     - Helped the professor create project instructions
 - __McGill University:__ Teaching assistant (TEAM mentor) for FACC 300: Engineering Economy (_Winter 2023_)
     - Helped answer students' questions after lectures
-- __123Loadboard:__ Backend intern (_Summer 2021, 2022_)
+- __123Loadboard:__ Backend intern (_3 May - 20 August 2021, 9 May - 19 August 2022_)
     - Implemented microservices to centralize email sending logic (.NET Core 3.1)
     - Contributed to the database (SQL Server), REST API (.NET Framework 4.7.2, C#), and various other projects
     - Implemented a new "reply-by-email" feature in the new microservices

@@ -5,7 +5,9 @@
 - __LinkedIn:__ https://www.linkedin.com/in/louis-hildebrand/
 
 # Education
-- __McGill University:__ B Software Engineering (_September 2020 – December 2023, currently U3_)
+- __McGill University:__ MSc Electrical Engineering Thesis (_January 2024 – Present_)
+    - Supervised by Prof. Christophe Dubach (Compilers and Synthesis Lab)
+- __McGill University:__ B Software Engineering (_September 2020 – December 2023_)
     - 4.0/4.0 CGPA
     - Dean's Honour List: 2020/2021 and 2021/2022
 - __John Abbott College:__ Honours Science (_August 2018 – May 2020_)

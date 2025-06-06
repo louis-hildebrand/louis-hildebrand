@@ -2,9 +2,13 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{xcolor}
 % Apparently hyperref needs to be imported last:
 % https://www.overleaf.com/learn/latex/Hyperlinks#Introduction
 \usepackage{hyperref}
+
+\definecolor{mygrey}{gray}{0.35}
+\newenvironment{gitemize}{\begin{itemize} \color{mygrey}}{\end{itemize}}
 
 % Section titles
 \titleformat
@@ -48,68 +52,93 @@
 
 \textbf{McGill University} MSc Electrical Engineering (Thesis)
 \hfill
-Winter 2024--Present
-\begin{itemize}
+\textit{Winter 2024--Present}
+\begin{gitemize}
 	\item Supervised by Prof. Christophe Dubach (Compilers and Synthesis Lab)
-\end{itemize}
+\end{gitemize}
 
 \textbf{McGill University} B. Software Engineering
 \hfill
-Fall 2020--Fall 2023
-\begin{itemize}
+\textit{Fall 2020--Fall 2023}
+\begin{gitemize}
 	\item 4.0/4.0 CGPA
 	\item Dean's Honour List: 2020/2021, 2021/2022, 2022/2023
-\end{itemize}
+	\item British Association Medal (highest final exam grades)
+\end{gitemize}
 
 \textbf{John Abbott College} Honours Science
 \hfill
-Fall 2018--Winter 2020
-\begin{itemize}
+\textit{Fall 2018--Winter 2020}
+\begin{gitemize}
 	\item Valedictorian
 	\item Dean's List: Fall 2018, Winter 2019, and Fall 2019
-\end{itemize}
+\end{gitemize}
 
 \section*{Skills}
 
 \begin{itemize}
-	\item \textbf{Languages:} Java, C\#, MSSQL, Python, C, Rust, etc.
-	\item \textbf{Other tools:} Git, various shells (e.g., Bash), Cucumber/Gherkin, JUnit, Umple, etc.
+	\item \textbf{Languages:} C, ARM assembly, Rust, Python, Java, etc.
+	\item \textbf{Other tools:} \LaTeX, Git, Bash, etc.
+\end{itemize}
+
+\section*{Relevant Courses}
+
+\begin{itemize}
+	\item ECSE 324: Computer Organization
+	\hfill
+	\textit{Fall 2021}
+
+	\item ECSE 444: Microprocessors
+	\hfill
+	\textit{Fall 2023}
+
+	\item COMP 520: Compiler Design
+	\hfill
+	\textit{Winter 2024}
 \end{itemize}
 
 \section*{Work Experience}
 
 \textbf{McGill University} Course or Teaching Assistant: ECSE 321
 \hfill
-Fall 2022--Fall 2024
-\begin{itemize}
-	\item Deliver weekly tutorials on developing a fullstack web app
-	\item Hold weekly office hours
-	\item Help review project instructions and write exam questions
-	\item Help grade deliverables and tests
-\end{itemize}
+\textit{Fall 2022--Winter 2025}
+\begin{gitemize}
+	\item Delivered weekly tutorials on developing a fullstack web app
+	\item Held weekly office hours and answered questions on the discussion board
+	\item Graded deliverables and tests, helped write exam questions
+\end{gitemize}
 
-\textbf{MDA} Engineering Intern
-\hfill
-Summer 2023
-\begin{itemize}
-	\item Implemented new features and fixed bugs in web services using ASP.NET MVC, Razor Pages, Telerik, and Kendo UI
-	\item Optimized SQL queries and stored procedures
-\end{itemize}
+% \textbf{MDA} Engineering Intern
+% \hfill
+% \textit{Summer 2023}
+% \begin{gitemize}
+% 	\item Implemented new features and fixed bugs in web services using ASP.NET MVC, Razor Pages, Telerik, and Kendo UI
+% 	\item Optimized SQL queries and stored procedures
+% \end{gitemize}
 
 \textbf{123Loadboard} Backend Intern
 \hfill
-Summers 2021, 2022
-\begin{itemize}
+\textit{Summers 2021, 2022}
+\begin{gitemize}
 	\item Independently implemented new microservices given a predefined spec
 	\item Fixed bugs in and added new endpoints to the main API
-\end{itemize}
+\end{gitemize}
 
-\textbf{McGill University} TEAM mentor: ECSE 223
+% \textbf{McGill University} TEAM mentor: ECSE 223
+% \hfill
+% \textit{Fall 2021}
+% \begin{gitemize}
+% 	\item Answered questions on online discussion boards
+% 	\item Guided four teams in the engineering project and in the general course material
+% \end{gitemize}
+
+\textbf{McGill University} TEAM mentor: MATH 263
 \hfill
-Fall 2021
-\begin{itemize}
-	\item Answered questions on online discussion boards
-	\item Guided four teams in the engineering project and in the general course material
-\end{itemize}
+\textit{Fall 2021}
+\begin{gitemize}
+    \item Delivered weekly tutorials
+    \item Independently produced summaries and practice problems based on the lecture content
+    \item Answered students' questions by email
+\end{gitemize}
 
 \end{document} % ---------------------------------------------------------------

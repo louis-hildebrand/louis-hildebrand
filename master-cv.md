@@ -87,6 +87,9 @@
     - Supervised groups of children aged 5 – 12
 
 # Projects
+
+- [__TwistyTimer__](https://github.com/louis-hildebrand/TwistyTimer) Android app (_started October 2024_)
+    - Added new trainer feature for blindfolded solving
 - [__SH-Prediction__](https://github.com/louis-hildebrand/SH-Prediction) Python command-line project (_started April 2022_)
     - Predicts players' roles in the social deduction game "Secret Hitler"
     - Personal project

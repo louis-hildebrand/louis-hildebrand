@@ -10,6 +10,7 @@
 % Apparently hyperref needs to be imported last:
 % https://www.overleaf.com/learn/latex/Hyperlinks#Introduction
 \usepackage{hyperref}
+\usepackage{anyfontsize}
 
 \definecolor{mygrey}{gray}{0.35}
 \newenvironment{gitemize}{\begin{itemize} \color{mygrey}}{\end{itemize}}
@@ -32,6 +33,8 @@
 	urlcolor=blue,
 	pdftitle={Louis Hildebrand CV},
 	pdfpagemode=FullScreen,
+	% Uncomment when printing so that links look like ordinary text
+	% hidelinks,
 }
 \urlstyle{same}
 
@@ -42,11 +45,11 @@
 
 % Contact info -----------------------------------------------------------------
 
-\begin{minipage}[t]{0.5\linewidth}
+\begin{minipage}[t]{0.55\linewidth}
 	\Huge
-	Louis Hildebrand
+	\resizebox{\linewidth}{!}{Louis Hildebrand}
 \end{minipage}%
-\begin{minipage}{0.5\linewidth}
+\begin{minipage}{0.45\linewidth}
 	\raggedleft
 	\setstretch{1.25}
 	\href{mailto:louis.hildebrand@mail.mcgill.ca}{louis.hildebrand@mail.mcgill.ca}
@@ -65,9 +68,9 @@
 \hfill
 \textit{Winter 2024--Winter 2026}
 \begin{gitemize}
-	\item Supervised by Prof. Christophe Dubach (Compilers and Synthesis Lab)
-	\item Thesis: ``A Minimal Intermediate Language for Generating Streaming Accelerators''
 	\item 4.0/4.0 CGPA
+	\item Thesis: ``A Minimal Intermediate Language for Generating Streaming Accelerators''
+	\item Supervised by Prof. Christophe Dubach (Compilers and Synthesis Lab)
 \end{gitemize}
 
 \textbf{McGill University} B. Software Engineering
@@ -91,31 +94,16 @@
 
 % TODO: Add link once the project is made open-source
 \textbf{Sirop}
-(\textit{Scala app})
+(\textit{Scala app; master's thesis project})
 \begin{gitemize}
 	\item Programming language and optimizing compiler
 	\item Generates VHDL description of hardware accelerator from high-level source code
-	\item Master's thesis project
-\end{gitemize}
-
-\textbf{MiniC compiler}
-(\textit{Scala app})
-\begin{gitemize}
-	\item Compiler for a subset of C with pointers, arrays, structs, functions, while loops, if statements, etc.
-	\item Includes parser, semantic analyzer, register allocator, and backend for MIPS assembly
 \end{gitemize}
 
 \textbf{\href{https://github.com/louis-hildebrand/TwistyTimer}{Twisty Timer}}
 (\textit{Java Android app})
 \begin{gitemize}
 	\item Contributed new features to existing speedcubing app, e.g., a practice mode for blindfolded solving
-\end{gitemize}
-
-\textbf{\href{https://github.com/louis-hildebrand/chick}{chick}}
-(\textit{OCaml library})
-\begin{gitemize}
-	\item Type checker for a dependently-typed list language
-	\item Developed for COMP 523: Language-Based Security
 \end{gitemize}
 
 \textbf{\href{https://github.com/louis-hildebrand/SH-Prediction}{SH Prediction}}
@@ -170,7 +158,7 @@ Counselor
 
 \section*{McGill Teaching Assistant Experience} %-------------------------------
 
-\textbf{ECSE 324}: Computer Organization
+\textbf{Computer Organization} (ECSE 324)
 \hfill
 \textit{Fall 2025}
 \begin{gitemize}
@@ -180,7 +168,7 @@ Counselor
 	\item Graded assignments
 \end{gitemize}
 
-\textbf{ECSE 223}: Model-Based Programming
+\textbf{Model-Based Programming} (ECSE 223)
 \hfill
 \textit{Winter 2025}
 \begin{gitemize}
@@ -189,7 +177,7 @@ Counselor
 	\item Helped prepare assignments
 \end{gitemize}
 
-\textbf{ECSE 321}: Introduction to Software Engineering
+\textbf{Intro. to Software Engineering} (ECSE 321)
 \hfill
 \textit{Fall 2022--Winter 2025}
 \begin{gitemize}
@@ -206,7 +194,7 @@ Counselor
 % 	\item Guided four teams in the engineering project and in the general course material
 % \end{gitemize}
 
-\textbf{MATH 263}: Ordinary Differential Equations for Engineers
+\textbf{Ordinary Differential Equations for Engineers} (MATH 263)
 \hfill
 \textit{Fall 2021}
 \begin{gitemize}
@@ -215,20 +203,55 @@ Counselor
     % \item Helped grade exams
 \end{gitemize}
 
-% \section*{Relevant Courses}
+\section*{Selected Courses}
 
-% \begin{itemize}
-% 	\item ECSE 324: Computer Organization
-% 	\hfill
-% 	\textit{Fall 2021}
+\textbf{Language-Based Security} (COMP 523)
+\hfill
+\textit{Winter 2025}
+\begin{gitemize}
+	\item Formally studied the syntax and semantics of programming languages and type systems
+	\item \textit{Project:} \href{https://github.com/louis-hildebrand/chick}{\texttt{chick}}, a type checker for a dependently-typed language
+\end{gitemize}
 
-% 	\item ECSE 444: Microprocessors
-% 	\hfill
-% 	\textit{Fall 2023}
+% \textbf{Computer Graphics} (ECSE 532)
+% \hfill
+% \textit{Fall 2024}
 
-% 	\item COMP 520: Compiler Design
-% 	\hfill
-% 	\textit{Winter 2024}
-% \end{itemize}
+\textbf{Compiler Design} (COMP 520)
+\hfill
+\textit{Winter 2024}
+\begin{gitemize}
+	\item Learned to implement a full compiler, including parsing, semantic analysis, register allocation, and code generation
+	\item \textit{Project:} compiler targeting MIPS assembly from a subset of C with pointers, arrays, structs, functions, ``while'' loops, ``if'' statements, etc.
+\end{gitemize}
+
+\textbf{Microprocessors} (ECSE 444)
+\hfill
+\textit{Fall 2023}
+\begin{gitemize}
+	% TODO: More details about what was covered in the course
+	\item Programmed an STMicroelectronics B-L4S5I-IOT01A board using C and ARMv7 assembly
+	\item \textit{Project:} memory game that plays a series of tones (high or low), detects user inputs via accelerometer (up or down), and provides feedback via a speaker
+\end{gitemize}
+
+\textbf{Parallel Computing} (ECSE 420)
+\hfill
+\textit{Fall 2023}
+\begin{gitemize}
+	\item Learned GPU programming with CUDA
+	\item \textit{Project:} CUDA implementation of a general 2D cellular automaton simulator, achieving $590\times$ higher throughput than an equivalent sequential implementation in C
+\end{gitemize}
+
+% \textbf{Realistic Image Synthesis} (ECSE 446)
+% \hfill
+% \textit{Fall 2023}
+
+\textbf{Operating Systems} (ECSE 427)
+\hfill
+\textit{Fall 2022}
+\begin{gitemize}
+	\item Learned fundamental OS concepts: processes, threads, file system structures, memory management, etc.
+	\item \textit{Assignments:} implemented a simple shell, threading library, and file system (all in C)
+\end{gitemize}
 
 \end{document} % ---------------------------------------------------------------

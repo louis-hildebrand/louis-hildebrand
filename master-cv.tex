@@ -11,9 +11,20 @@
 % https://www.overleaf.com/learn/latex/Hyperlinks#Introduction
 \usepackage{hyperref}
 \usepackage{anyfontsize}
+\usepackage[defaultlines=4,all]{nowidow}
 
 \definecolor{mygrey}{gray}{0.35}
 \newenvironment{gitemize}{\begin{itemize} \color{mygrey}}{\end{itemize}}
+\newenvironment{cvitem}[3]{
+	\vspace{0.1\baselineskip}
+	% Use minipage to avoid breaking this item
+	\begin{minipage}{\linewidth}
+	\textbf{#1} {#2}\hfill\textit{#3}
+	\begin{gitemize}
+}{
+	\end{gitemize}
+	\end{minipage}\vspace{0.1\baselineskip}
+}
 
 % Section titles
 \titleformat
@@ -34,7 +45,7 @@
 	pdftitle={Louis Hildebrand CV},
 	pdfpagemode=FullScreen,
 	% Uncomment when printing so that links look like ordinary text
-	hidelinks,
+	% hidelinks,
 }
 \urlstyle{same}
 
@@ -64,82 +75,9 @@
 
 \section*{Education} %----------------------------------------------------------
 
-\textbf{McGill University} MSc Electrical Engineering
-\hfill
-\textit{Winter 2024--Winter 2026}
-\begin{gitemize}
-	\item \textbf{GPA:} 4.0/4.0
-	\item \textbf{Thesis:} ``A Minimal Intermediate Language for Generating Streaming Accelerators''
-	% \item Supervised by Prof. Christophe Dubach (Compilers and Synthesis Lab)
-\end{gitemize}
-
-\textbf{McGill University} B. Software Engineering
-\hfill
-\textit{Fall 2020--Fall 2023}
-\begin{gitemize}
-	\item \textbf{GPA:} 4.0/4.0
-	\item Dean's Honour List: 2020/2021, 2021/2022, 2022/2023
-	\item British Association Medal (highest final exam grades)
-\end{gitemize}
-
-\textbf{John Abbott College} Honours Science
-\hfill
-\textit{Fall 2018--Winter 2020}
-\begin{gitemize}
-	\item Valedictorian
-	\item Dean's List: Fall 2018, Winter 2019, and Fall 2019
-\end{gitemize}
-
-\section*{Selected Courses} %---------------------------------------------------
-
-% \textbf{Language-Based Security} (COMP 523)
-% \hfill
-% \textit{Winter 2025}
-% \begin{gitemize}
-% 	\item Formally studied the syntax and semantics of programming languages and type systems
-% 	\item \textit{Project:} \href{https://github.com/louis-hildebrand/chick}{\texttt{chick}}, a type checker for a dependently-typed language
-% \end{gitemize}
-
-% \textbf{Computer Graphics} (ECSE 532)
-% \hfill
-% \textit{Fall 2024}
-
-\textbf{Compiler Design} (COMP 520)
-\hfill
-\textit{Winter 2024}
-\begin{gitemize}
-	\item Learned to implement a compiler, including parsing, semantic analysis, register allocation, and code generation
-	\item \textbf{Project:} compiler targeting MIPS assembly from a subset of C % with pointers, arrays, structs, functions, ``while'' loops, ``if'' statements, etc.
-\end{gitemize}
-
-\textbf{Microprocessors} (ECSE 444)
-\hfill
-\textit{Fall 2023}
-\begin{gitemize}
-	% TODO: More details about what was covered in the course
-	\item Programmed an STM32 B-L4S5I-IOT01A board using C and ARMv7 assembly
-	\item \textbf{Project:} memory game that plays a series of tones (high or low), detects user inputs via accelerometer (up or down), and provides feedback via a speaker
-\end{gitemize}
-
-\textbf{Parallel Computing} (ECSE 420)
-\hfill
-\textit{Fall 2023}
-\begin{gitemize}
-	\item Learned GPU programming with CUDA
-	\item \textbf{Project:} CUDA implementation of a general 2D cellular automaton simulator, achieving $590\times$ higher throughput than an equivalent sequential implementation in C
-\end{gitemize}
-
-% \textbf{Realistic Image Synthesis} (ECSE 446)
-% \hfill
-% \textit{Fall 2023}
-
-\textbf{Operating Systems} (ECSE 427)
-\hfill
-\textit{Fall 2022}
-\begin{gitemize}
-	\item Learned fundamental OS concepts: processes, threads, memory management, etc.
-	\item \textbf{Assignments:} a simple shell, threading library, and file system (all in C)
-\end{gitemize}
+\input{cv-parts/education/msc}
+\input{cv-parts/education/b-software-eng}
+\input{cv-parts/education/cegep}
 
 \section*{Skills} %-------------------------------------------------------------
 
@@ -152,105 +90,32 @@
 
 \section*{McGill Teaching Assistant Experience} %-------------------------------
 
-\textbf{Computer Organization} (ECSE 324)
-\hfill
-\textit{Fall 2025}
-\begin{gitemize}
-	\item Delivered tutorials on computer organization (e.g., interacting with devices via memory-mapped I/O)
-	\item Guided students in lab work (writing C and ARM assembly programs)
-	\item Answered students' questions on the online discussion board
-	\item Graded assignments
-\end{gitemize}
-
-\textbf{Model-Based Programming} (ECSE 223)
-\hfill
-\textit{Winter 2025}
-\begin{gitemize}
-	\item Delivered weekly tutorials on model-based programming (e.g., UML class and state diagrams, Umple) and other tools (e.g., Git, JUnit, Gradle, Cucumber)
-	\item Answered students' questions on the online discussion board
-	\item Helped prepare assignments
-\end{gitemize}
-
-\textbf{Intro. to Software Engineering} (ECSE 321)
-\hfill
-\textit{Fall 2022--Winter 2025}
-\begin{gitemize}
-	\item Delivered weekly tutorials on developing a fullstack web app with PostgreSQL, Spring Boot, and Vue.js
-	\item Held weekly office hours and answered questions on the online discussion board
-	\item Helped write and grade tests
-\end{gitemize}
-
-% \textbf{McGill University} TEAM mentor: ECSE 223
-% \hfill
-% \textit{Fall 2021}
-% \begin{gitemize}
-% 	\item Answered questions on online discussion boards
-% 	\item Guided four teams in the engineering project and in the general course material
-% \end{gitemize}
-
-% \textbf{Ordinary Differential Equations for Engineers} (MATH 263)
-% \hfill
-% \textit{Fall 2021}
-% \begin{gitemize}
-%     \item Delivered weekly tutorials on differential equations, including a summary of lecture content and practice problems
-%     \item Answered students' questions by email
-%     % \item Helped grade exams
-% \end{gitemize}
+\input{cv-parts/academic-experience/ecse324}
+\input{cv-parts/academic-experience/ecse223}
+\input{cv-parts/academic-experience/ecse321}
+\input{cv-parts/academic-experience/math263}
 
 \section*{Industry Experience} %------------------------------------------------
 
-\textbf{MDA Space} Engineering Intern, DevOps
-\hfill
-\textit{Summer 2023}
-\begin{gitemize}
-	\item Implemented new features and fixed bugs in web services using ASP.NET MVC, Razor Pages, Telerik, and Kendo UI
-	\item Optimized SQL queries and stored procedures
-\end{gitemize}
-
-\textbf{123Loadboard} Backend Intern
-\hfill
-\textit{Summers 2021, 2022}
-\begin{gitemize}
-	\item Independently implemented new microservices given a predefined specification
-	\item Fixed bugs in and added new endpoints to the main API
-\end{gitemize}
-
-% \textbf{Pierrefonds Day Camps}
-% Counselor
-% \hfill \textit{Summers 2017--2019}
-% \begin{gitemize}
-% 	\item Supervised groups of children aged 5--12
-% 	\item Worked in both French and English
-% \end{gitemize}
+\input{cv-parts/industry-experience/mda-intern}
+\input{cv-parts/industry-experience/123loadboard-intern}
+\input{cv-parts/industry-experience/pierrefonds-day-camps}
 
 \section*{Projects} %-----------------------------------------------------------
 
-% TODO: Add link once the project is made open-source
-\textbf{Sirop}
-(\textit{Scala app; master's thesis project})
-\begin{gitemize}
-	\item Programming language and optimizing compiler
-	\item Generates VHDL description of hardware accelerator from high-level source code
-\end{gitemize}
+\input{cv-parts/projects/sirop}
+\input{cv-parts/projects/twisty-timer}
+\input{cv-parts/projects/secret-hitler-prediction}
+\input{cv-parts/projects/pocket-cube-solver}
 
-\textbf{\href{https://github.com/louis-hildebrand/TwistyTimer}{Twisty Timer}}
-(\textit{Java Android app})
-\begin{gitemize}
-	\item Contributed new features to an existing Rubik's Cube app (e.g., a practice mode for blindfolded solving)
-\end{gitemize}
+\section*{Selected Courses} %---------------------------------------------------
 
-% \textbf{\href{https://github.com/louis-hildebrand/SH-Prediction}{SH Prediction}}
-% (\textit{Python command-line app})
-% \begin{gitemize}
-% 	\item Predicts players' roles in the social deduction game ``Secret Hitler''
-% \end{gitemize}
-
-\textbf{Pocket cube solver}
-(\textit{Arduino project})
-\begin{gitemize}
-	\item Robot to solve a $2 \!\times\! 2 \!\times\! 2$ Rubik's Cube
-	\item Presented at the 2018 Montreal Regional Science and Technology Fair
-	\item Awarded the Intel Excellence in Computer Science Award and the McGill University School of Computer Science (Robotics) Award
-\end{gitemize}
+\input{cv-parts/courses/comp523}
+\input{cv-parts/courses/ecse532}
+\input{cv-parts/courses/ecse551}
+\input{cv-parts/courses/comp520}
+\input{cv-parts/courses/ecse444}
+\input{cv-parts/courses/ecse420}
+\input{cv-parts/courses/ecse427}
 
 \end{document} % ---------------------------------------------------------------

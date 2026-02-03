@@ -7,11 +7,13 @@
 \graphicspath{{./img/}}
 \usepackage[export]{adjustbox}
 \usepackage{setspace}
+\usepackage{anyfontsize}
+\usepackage[defaultlines=4,all]{nowidow}
+\usepackage{xspace}
+\usepackage[T1]{fontenc}
 % Apparently hyperref needs to be imported last:
 % https://www.overleaf.com/learn/latex/Hyperlinks#Introduction
 \usepackage{hyperref}
-\usepackage{anyfontsize}
-\usepackage[defaultlines=4,all]{nowidow}
 
 \definecolor{mygrey}{gray}{0.35}
 \newenvironment{gitemize}{\begin{itemize} \color{mygrey}}{\end{itemize}}
@@ -25,6 +27,13 @@
 	\end{gitemize}
 	\end{minipage}\vspace{0.1\baselineskip}
 }
+
+% TODO: Automatically generate both on each compile?
+% French (#1) or English (#2)
+\newcommand{\froren}[2]{#2}
+\newcommand{\fall}{\froren{automne}{Fall}\xspace}
+\newcommand{\winter}{\froren{hiver}{Winter}\xspace}
+\newcommand{\summer}{\froren{\'et\'e}{Summer}\xspace}
 
 % Section titles
 \titleformat
@@ -73,42 +82,42 @@
 	\includegraphics[height=0.85\baselineskip,valign=c]{linkedin-logo.png}
 \end{minipage}
 
-\section*{Education} %----------------------------------------------------------
+\section*{\froren{Formation}{Education}} %--------------------------------------
 
 \input{cv-parts/education/msc}
 \input{cv-parts/education/b-software-eng}
 \input{cv-parts/education/cegep}
 
-\section*{Skills} %-------------------------------------------------------------
+\section*{\froren{Comp\'etences}{Skills}} %-------------------------------------
 
 \begin{itemize}
-	\item \textbf{Formal languages:} C, Assembly (ARMv7, MIPS), Rust, Python, Scala, Java, C\#, SQL (MS SQL Server, PostgreSQL), VHDL, OCaml, JavaScript, HTML, CSS
-	\item \textbf{Natural languages:} English, French, Afrikaans
+	\item \textbf{\froren{Langages formels}{Formal languages}:} C, \froren{langage assembleur}{Assembly} (ARMv7, MIPS), Rust, Python, Scala, Java, C\#, SQL (MS SQL Server, PostgreSQL), VHDL, OCaml, JavaScript, HTML, CSS
+	\item \textbf{\froren{Langages naturels}{Natural languages}:} \froren{anglais}{English}, \froren{fran\c{c}ais}{French}, \froren{afrikaans}{Afrikaans}
 	\item \textbf{Frameworks:} Spring Boot, .NET (Framework, Core), Django, Vue.js
-	\item \textbf{Other tools:} Git, Bash, Valgrind, Gradle, JUnit, \LaTeX, etc.
+	\item \textbf{\froren{Autres outils}{Other tools}:} Git, Bash, Valgrind, Gradle, JUnit, \LaTeX, etc.
 \end{itemize}
 
-\section*{McGill Teaching Assistant Experience} %-------------------------------
+\section*{\froren{Auxiliaire d'enseignement}{McGill Teaching Assistant Experience}}
 
 \input{cv-parts/academic-experience/ecse324}
 \input{cv-parts/academic-experience/ecse223}
 \input{cv-parts/academic-experience/ecse321}
 \input{cv-parts/academic-experience/math263}
 
-\section*{Industry Experience} %------------------------------------------------
+\section*{\froren{Exp\'eriences de travail}{Industry Experience}} %-------------
 
 \input{cv-parts/industry-experience/mda-intern}
 \input{cv-parts/industry-experience/123loadboard-intern}
 \input{cv-parts/industry-experience/pierrefonds-day-camps}
 
-\section*{Projects} %-----------------------------------------------------------
+\section*{\froren{Projets}{Projects}} %-----------------------------------------
 
 \input{cv-parts/projects/sirop}
 \input{cv-parts/projects/twisty-timer}
 \input{cv-parts/projects/secret-hitler-prediction}
 \input{cv-parts/projects/pocket-cube-solver}
 
-\section*{Selected Courses} %---------------------------------------------------
+\section*{\froren{Cours}{Selected Courses}} %---------------------------------------------------
 
 \input{cv-parts/courses/comp523}
 \input{cv-parts/courses/ecse532}

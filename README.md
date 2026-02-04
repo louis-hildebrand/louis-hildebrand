@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+See my full CV:
+- 🇬🇧 [English CV](./master-cv.pdf)
+- 🇫🇷 [CV français](./master-cv-fr.pdf)
+
 <!--
 **louis-hildebrand/louis-hildebrand** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

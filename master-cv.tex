@@ -18,14 +18,12 @@
 \definecolor{mygrey}{gray}{0.35}
 \newenvironment{gitemize}{\begin{itemize} \color{mygrey}}{\end{itemize}}
 \newenvironment{cvitem}[3]{
-	\vspace{0.1\baselineskip}
-	% Use minipage to avoid breaking this item
-	\begin{minipage}{\linewidth}
+	\begin{samepage}
 	\textbf{#1} {#2}\hfill\textit{#3}
 	\begin{gitemize}
 }{
 	\end{gitemize}
-	\end{minipage}\vspace{0.1\baselineskip}
+	\end{samepage}
 }
 
 \input{language/current.tex}

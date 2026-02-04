@@ -5,8 +5,6 @@
             "name": "latexmk",
             "command": "latexmk",
             "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
                 "-file-line-error",
                 "-pdf",
                 "-outdir=%OUTDIR%",
@@ -15,15 +13,39 @@
             "env": {}
         },
         {
-            "name": "copy pdf",
+            "name": "activate english",
             "command": "cp",
-            "args": ["%OUTDIR%/%DOCFILE%.pdf", "%DIR%/"]
+            "args": ["%DIR%/language/english.tex", "%DIR%/language/current.tex"]
+        },
+        {
+            "name": "activate french",
+            "command": "cp",
+            "args": ["%DIR%/language/french.tex", "%DIR%/language/current.tex"]
+        },
+        {
+            "name": "copy english pdf",
+            "command": "cp",
+            "args": ["%OUTDIR%/%DOCFILE%.pdf", "%DIR%/master-cv.pdf"]
+        },
+        {
+            "name": "copy french pdf",
+            "command": "cp",
+            "args": ["%OUTDIR%/%DOCFILE%.pdf", "%DIR%/master-cv-fr.pdf"]
+        },
+        {
+            "name": "clean",
+            "command": "rm",
+            "args": ["%DIR%/language/current.tex"]
         }
     ],
     "latex-workshop.latex.recipes": [
         {
             "name": "latexmk",
-            "tools": ["latexmk", "copy pdf"]
+            "tools": [
+                "activate english", "latexmk", "copy english pdf",
+                "activate french", "latexmk", "copy french pdf",
+                "clean"
+            ]
         },
     ],
 }

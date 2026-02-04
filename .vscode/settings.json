@@ -1,51 +1,14 @@
 {
-    "latex-workshop.latex.outDir": "%DIR%/bin",
     "latex-workshop.latex.tools": [
         {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-file-line-error",
-                "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOC%"
-            ],
-            "env": {}
-        },
-        {
-            "name": "activate english",
-            "command": "cp",
-            "args": ["%DIR%/language/english.tex", "%DIR%/language/current.tex"]
-        },
-        {
-            "name": "activate french",
-            "command": "cp",
-            "args": ["%DIR%/language/french.tex", "%DIR%/language/current.tex"]
-        },
-        {
-            "name": "copy english pdf",
-            "command": "cp",
-            "args": ["%OUTDIR%/%DOCFILE%.pdf", "%DIR%/master-cv.pdf"]
-        },
-        {
-            "name": "copy french pdf",
-            "command": "cp",
-            "args": ["%OUTDIR%/%DOCFILE%.pdf", "%DIR%/master-cv-fr.pdf"]
-        },
-        {
-            "name": "clean",
-            "command": "rm",
-            "args": ["%DIR%/language/current.tex"]
+            "name": "make",
+            "command": "make"
         }
     ],
     "latex-workshop.latex.recipes": [
         {
-            "name": "latexmk",
-            "tools": [
-                "activate english", "latexmk", "copy english pdf",
-                "activate french", "latexmk", "copy french pdf",
-                "clean"
-            ]
-        },
+            "name": "build",
+            "tools": ["make"]
+        }
     ],
 }

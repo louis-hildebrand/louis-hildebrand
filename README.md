@@ -1,10 +1,10 @@
 ### Hi there 👋
 
 My name is Louis Hildebrand.
-I have a bachelor's degree in software engineering and am currently working towards a master's degree in electrical engineering, both at McGill University.
+I have a bachelor's degree in software engineering and a master's degree in electrical engineering, both at McGill University.
 My master's thesis has to do with compilers and high-level synthesis.
 
-I am currently looking for full-time work in Montreal starting in the summer of 2026. See my full CV here:
+See my full CV here:
 - 🇬🇧 [English CV](./master-cv.pdf)
 - 🇫🇷 [CV français](./master-cv-fr.pdf)
 

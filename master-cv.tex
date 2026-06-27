@@ -12,8 +12,12 @@
 \usepackage{xspace}
 \usepackage[T1]{fontenc}
 
+\usepackage[style=ieee]{biblatex}
+\addbibresource{cv-parts/publications/references.bib}
+
 % Apparently hyperref needs to be imported last:
 % https://www.overleaf.com/learn/latex/Hyperlinks#Introduction
+% TODO: Underline links?
 \usepackage{hyperref}
 
 \definecolor{mygrey}{gray}{0.35}
@@ -89,6 +93,10 @@
 \input{cv-parts/education/b-software-eng}
 \input{cv-parts/education/cegep}
 
+\section*{Publication} %--------------------------------------------------------
+
+\input{cv-parts/publications/sirop.tex}
+
 \section*{\froren{Comp\'etences}{Skills}} %-------------------------------------
 
 \begin{itemize}
@@ -114,12 +122,12 @@
 
 \section*{\froren{Projets}{Projects}} %-----------------------------------------
 
-\input{cv-parts/projects/sirop}
+% \input{cv-parts/projects/sirop}
 \input{cv-parts/projects/twisty-timer}
 \input{cv-parts/projects/secret-hitler-prediction}
 \input{cv-parts/projects/pocket-cube-solver}
 
-\section*{\froren{Cours}{Selected Courses}} %---------------------------------------------------
+\section*{\froren{Cours}{Selected Courses}} %-----------------------------------
 
 \input{cv-parts/courses/comp523}
 \input{cv-parts/courses/ecse532}

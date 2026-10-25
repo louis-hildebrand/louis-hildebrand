@@ -2,7 +2,7 @@ SRC := master-cv.tex
 SRC += cv-parts/academic-experience/*.tex
 SRC += cv-parts/courses/*.tex
 SRC += cv-parts/education/*.tex
-SRC += cv-parts/industry-experience/*.tex
+SRC += cv-parts/work-experience/*.tex
 SRC += cv-parts/projects/*.tex
 SRC += cv-parts/publications/*.tex
 
